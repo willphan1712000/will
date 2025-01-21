@@ -13,9 +13,11 @@ export default function Blog() {
 
   return (
     <>
-      <div id="main" className="md:!h-[800vh]">
-          <SecondTitle content={{up: "My journey", down: "begins"}}/>
-          <PictureSection pictureContent={pictureContent} pictures={pictures}/>
+      <div className="flex justify-center items-center w-full">
+        <div id="main" className="md:!h-[800vh] max-w-[1500px]">
+            <SecondTitle content={{up: "My journey", down: "begins"}}/>
+            <PictureSection pictureContent={pictureContent} pictures={pictures}/>
+        </div>
       </div>
     </>
   );
